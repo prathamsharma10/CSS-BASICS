@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS INTRODUCTION</title>
+    
+
+    <!-- Comment in CSS -->
+     <!-- [/* */] -->
+
+
+    <!-- 2. Internal Css => using style tag inside head with corresponding selector -->
+<!--    
+     <style>
+         /* h1->selector */
+         /* color=>property , goldenrod=>value */
+        h1{
+            color: goldenrod;
+        }
+        /* !important is the max priority styling */
+        /* p{
+            color: aqua;
+            background-color: blueviolet ;
+        } */
+        
+        
+     </style> -->
+
+    <!-- 3. External Css => 1.Create Css file. 2.Link Css file to html file using link tag in head -->
+<!-- 
+    <link rel="stylesheet" href="./style.css"> -->
+
+    <!-- CSS works in ordering way -->
+     <style>
+        /* 1.Element Selector */
+        p{
+            background-color:  gold;
+        }
+        /*  2.id Selector => #id name */
+        #article1{
+            background-color: aqua;
+        }
+        /* 3.class Selector => .class name*/
+        .paraclass{
+            color: blueviolet;
+        }
+        /* 4.Group Selector => tag,tag{
+        }*/
+        p,article{
+            width: 500px;
+        }
+        p.paraclass{
+            width: 800px;;
+        }
+
+
+     </style>
+     
+
+     
+</head>
+<body>
+            <!-- CSS => Cascading Style Sheet for Styling and enhancing appearance -->
+
+            <!-- CSS depends on:-
+        1. Specificity :- means priority of selectors 
+        Inline css > id > class > element
+        2. !important 
+        3. Order in which css is declared , the last one have higher priority
+        4. Inheritance means some css propertues will apply on all the elements insiade the selector like color but some not like border   -->
+
+        <!-- CSS Ways  => Inline,Internal,External-->
+
+        <!-- <h1>Introduction To CSS</h1>
+
+        1. Inline CSS => [styling inside tag] tag attribute="value" -->
+         <!-- Inline has max priority -->
+        <!-- <p style="background-color: yellow;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nemo, accusantium obcaecati tempore amet provident nisi? Sapiente reiciendis, odit molestias dicta beatae at? Similique odio iste nihil harum quasi repudiandae!</p>
+
+        <p style="color: gold; background-color: cadetblue;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque amet doloremque minus voluptatum, optio dolor excepturi illum minima! Aliquam assumenda facere amet perferendis cumque ipsam cupiditate magnam itaque molestiae nisi, praesentium odio possimus iste omnis molestias fugiat nam, voluptatibus non.</p>
+
+        <p style="color: cyan;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem deserunt unde dignissimos et animi neque magnam dolor? Molestias eveniet animi temporibus autem perspiciatis velit hic illum cum! Possimus maiores, consectetur amet dignissimos unde nemo suscipit soluta aliquam esse aliquid autem, a voluptas consequatur quas in odit repudiandae natus accusamus incidunt?</p>
+
+        <footer>Footer Matter</footer>  -->
+
+        <!-- Selector =>it is a way to target any single html or multiple element -->
+         <!-- it can target => element , id , class , group -->
+
+          <!-- 1.element selector => tag name[p,article,a,etc..] -->
+
+          <h2>Selectors</h2>
+          <p class="paraclass">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui perferendis ex laudantium ipsum? Animi ullam consequuntur reprehenderit consequatur voluptatibus provident, veritatis autem exercitationem aut doloremque quos aspernatur et officia modi aliquam quia nisi vitae mollitia amet veniam? Doloribus ut quae rerum. Veritatis, quis! Harum assumenda voluptates minima perferendis amet modi.</p>
+          <p class="paraclass">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat consectetur harum commodi qui aliquam corporis dicta expedita sint culpa delectus.</p>
+          <p class="paraclass">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, aspernatur cum ad perferendis est quo culpa quas doloremque enim, animi qui. Porro, laborum quisquam a iure magni veniam autem, nihil, debitis tempore facilis doloremque odit distinctio. Nobis exercitationem voluptatum aliquid.</p>
+          <article id="article1" class="paraclass">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam odio dolorem natus quod laudantium voluptatibus, iusto laborum. Exercitationem corporis iste dolorem asperiores dolor modi quas sit ad, illum at, excepturi, suscipit est? Eum, minus assumenda. Sunt laboriosam nisi illo pariatur.</article>
+
+</body>
+</html>
