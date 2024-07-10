@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOX MODEL</title>
+    <style>
+        /* Universal Selector => [*] */
+        /* It is use as good practice to remove default padding and margin */
+
+        /* *{
+            padding: 0;
+            margin: 0;
+        } */
+
+        /* Border Property in Css */
+        h1{
+            background-color: blueviolet;
+            /* Width define the viewport */
+            width: 200px;
+            height: 200px;
+            /* border-style:solid;
+            border-width: 3px;
+            border-color: darkorange; */
+
+            /* Short Hand Notation of Border */
+
+            /* border: solid yellow 5px; */
+
+            /* For Corner or Rounded Border radius is used */
+
+            /* border-radius: 5px; */
+
+            /* For Single side  */
+
+            /* border-top-left-radius: 10px  ;
+            border-bottom: solid blue 5px;
+            border-right: solid green 5px;
+            border-left: solid pink 5px; */
+            border: solid black 3px;
+            border-radius: 5px;
+        } 
+        /* padding => between content and border */
+        /* margin => Gap between two boxes  */
+        .firstPara{
+            background-color: aqua;
+            border: solid black 3px;
+            border-radius: 5px;
+            width: 200px;
+            padding: 20px;
+            margin: 50px;
+               
+        }
+        .secondPara{
+            background-color: chartreuse;
+            border: solid black 3px;
+            border-radius: 5px;
+            width: 200px;
+            /* padding-left: 10px;
+            padding-top: 20px;
+            padding-right: 30px;
+            padding-bottom: 40px; */
+
+            /* Padding Short Hand Notation */
+            /* 1.padding: top right bottom left */
+
+            /* padding: 15px 25px 35px 45px;
+            */
+
+            /* 2. padding: (top-bottom) (left-right)*/
+            padding: 30px 60px;
+        }
+
+        .thirdPara{
+            background-color: chocolate;
+            border: solid black 3px;
+            border-radius: 5px; 
+            width: 200px;
+            /* margin: 50px; */
+            /* margin-top: 50px; */
+
+            /* margin short hand */
+
+            /* 1.margin : top right bottom left */
+            /* margin: 10px 20px 30px 40px; */
+
+            /* 2.margin: (top-bottom) (right-left) */
+            margin: 50px 30px;
+               
+        }
+    </style>
+</head>
+<body>
+    <h1>BOX MODEL</h1>
+    <p class="firstPara">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime laboriosam unde laudantium, veritatis labore eius libero cum accusamus voluptatibus consequatur sed consequuntur, veniam voluptatum obcaecati alias debitis, rerum amet tempore ducimus impedit deserunt est! Commodi iusto aspernatur quo nisi hic laborum unde fuga deleniti esse veniam. Minima eum tenetur officia.</p>
+    <p class="secondPara">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio atque sint in quibusdam ut, esse est, pariatur voluptatum quaerat minus autem quo dolores qui tempora rem eveniet cum dolorum corporis culpa incidunt doloremque illum commodi, tenetur sapiente! Iure, ipsum repudiandae.</p>
+    <p class="thirdPara">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae cupiditate aliquam error expedita architecto obcaecati excepturi doloribus fugiat consequatur cum! Voluptatum porro quas in et autem commodi totam animi rerum voluptas molestiae distinctio veritatis vitae voluptates inventore ad perferendis, itaque, quos eveniet soluta aut alias.</p>
+
+    <!--BOX MODEL Layers => Content , Padding , Border , Margin  -->
+
+    
+
+
+
+
+</body>
+</html>
