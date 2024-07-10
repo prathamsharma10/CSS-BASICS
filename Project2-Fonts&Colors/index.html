@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonts and Colors in Css</title>
+    <!-- External Font link and external css  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <style>
+        /* CSS FONTS PROPERTIES */
+        p{
+            font-style: italic;
+            font-size: 20px;
+            font-family: "Oswald", sans-serif;
+            font-weight: 500;
+            line-height: 50px;
+        }
+        /* Colors in CSS */
+        /* 1.using named colors */
+        #para1{
+            background-color: yellow;
+            color: blue;
+        }
+        /* 2. a)rgb values(red 0-255,green 0-255,blue 0-255) */
+        #para2{
+            background-color: rgb(27, 91, 198);
+        }
+        /* b)rgba - a for alpha */
+        #para3{
+            background-color: rgba(124, 341, 121, 3);
+        }
+        /* 3.Hexadecimal */
+        /* #ff(red component) ff(green component) ff(blue component) */
+        .para4{
+            background-color: #ecec4aef;
+        }
+        /* 4.HSL (HUE,SATURATION,LIGHTNESS) */
+
+        .para5{
+            background-color: hsl(120, 50%, 40%)
+                }
+
+    </style>
+</head>
+<body>
+    <h1>Fonts and Colors</h1>
+
+    <p id="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore suscipit veniam culpa omnis distinctio iste ad dolorum ipsum pariatur iure.</p>
+    <p id="para2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error illum velit ullam ducimus molestiae! Hic eum, et doloribus neque alias recusandae, nulla quibusdam culpa maxime repellendus debitis, reprehenderit voluptate dignissimos!</p>
+    <p id="para3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat alias totam error distinctio amet quia mollitia, sed magnam! Eos quasi mollitia dolores quis animi, excepturi reiciendis voluptatibus nostrum architecto officia aperiam quae unde esse, ratione, laborum commodi suscipit! Nam, iste.</p>
+    <p class="para4">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quos laudantium sunt dolor possimus? Repellendus quisquam sit ad deleniti quis impedit consectetur suscipit, accusamus, quod rem necessitatibus? Blanditiis, illo repellat. Quis accusamus minus vero molestiae dicta eum non ea beatae omnis a maxime id earum suscipit, sit impedit soluta nesciunt!
+        
+    </p>
+    <p class="para5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, blanditiis sunt voluptatum aliquam officia impedit dicta? Quasi ut ducimus suscipit repudiandae minus quas doloremque iure nisi fugiat officia repellendus dolorum facere natus laborum in iusto quos, velit unde quibusdam quam. Totam et dolores odit perferendis, earum corporis sapiente, animi tempora quasi repellat excepturi debitis itaque, doloribus iste sequi eveniet vitae.</p>
+
+
+
+
+</body>
+</html>
