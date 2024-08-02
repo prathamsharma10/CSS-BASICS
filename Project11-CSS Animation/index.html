@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: beige;
+            border: 5px solid brown;
+
+        }
+        .box1{
+            width: 350px;
+            height: 80px;
+            background-color: blue;
+            border-radius: 10px;
+            margin: 10px;
+            border: 4px solid yellow;
+            position: relative;
+            /* animation-name: rightMovement;
+            animation-duration: 5s ;
+            animation-iteration-count: 1;
+            animation-delay: 2s;
+            /* animation-timing-function:cubic-bezier(0.1,0.7,0.1,0.1); */
+            /* animation-timing-function: linear; */
+            /* animation-direction:alternate-reverse; */
+            /* animation-fill-mode: backwards; */ 
+
+            /* Short hand */
+                     /* direction|easing funtion|delay|iteration|direction|fill-mode|playstate|name    */
+            animation: 5s linear  1s infinite alternate none running rightMovement;
+        }
+        @keyframes rightMovement{
+            from{
+                top: 0;
+                left: 0;
+            }
+            to{
+                top: 0;
+                left: 1025px;
+            }
+        }
+        .box2{
+            width: 350px;
+            height: 80px;
+            background-color: blue;
+            border-radius: 10px;
+            margin: 10px;
+            border: 4px solid yellow;
+            position: relative;
+            /* animation-name: rightMovement;
+            animation-duration: 5s ;
+            animation-iteration-count: 1;
+            animation-delay: 2s;
+            /* animation-timing-function:cubic-bezier(0.1,0.7,0.1,0.1); */
+            /* animation-timing-function: linear; */
+            /* animation-direction:alternate-reverse; */
+            /* animation-fill-mode: backwards; */ 
+
+            /* Short hand */
+                     /* direction|easing funtion|delay|iteration|direction|fill-mode|playstate|name    */
+            animation: 5s ease-in  1s infinite alternate none running leftMovement;
+        }
+        @keyframes leftMovement{
+            from{
+                top: 400px;
+                left: 1350px;
+            }
+            to{
+                top: 400px;
+                left: 1350px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="box1">
+        
+
+        </div>
+        <div class="box2">
+        
+
+        </div>
+
+    </div>
+
+</body>
+</html>
